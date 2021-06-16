@@ -12,8 +12,8 @@ import javax.persistence.Table;
 @Getter
 @Setter
 @Entity
-@Table(name = "INUTILIZACAO")
-public class Inutilizacao {
+@Table(name = "STATUS")
+public class Status {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
