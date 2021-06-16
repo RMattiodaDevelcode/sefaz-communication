@@ -1,4 +1,4 @@
 package com.develcode.sefaz.demo.dataShape.dto;
 
-public interface Solicitacao {
+public interface SolicitacaoDTO {
 }
