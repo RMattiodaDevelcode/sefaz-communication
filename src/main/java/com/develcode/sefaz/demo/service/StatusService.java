@@ -1,12 +1,17 @@
 package com.develcode.sefaz.demo.service;
 
+import com.develcode.sefaz.demo.dataShape.domain.Status;
 import com.develcode.sefaz.demo.dataShape.dto.StatusDTO;
+import com.develcode.sefaz.demo.dataShape.enums.AmbientEnum;
+import com.develcode.sefaz.demo.dataShape.enums.StatusServiceEnum;
 import com.develcode.sefaz.demo.dataShape.mapper.StatusMapper;
 import com.develcode.sefaz.demo.repository.StatusRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
+
+import java.time.LocalDateTime;
 
 @Service
 public class StatusService {

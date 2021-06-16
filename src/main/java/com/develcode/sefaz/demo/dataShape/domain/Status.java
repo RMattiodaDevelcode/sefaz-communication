@@ -2,7 +2,9 @@ package com.develcode.sefaz.demo.dataShape.domain;
 
 import com.develcode.sefaz.demo.dataShape.enums.AmbientEnum;
 import com.develcode.sefaz.demo.dataShape.enums.StatusServiceEnum;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.Entity;
@@ -18,6 +20,8 @@ import java.time.LocalDateTime;
 @Setter
 @Entity
 @Table(name = "status")
+@AllArgsConstructor
+@NoArgsConstructor
 public class Status {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
