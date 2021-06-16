@@ -4,10 +4,13 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 @Getter
-@AllArgsConstructor
 public enum AmbientEnum {
     PRODUCAO(1),
     HOMOLOGACAO(2);
+
+    private AmbientEnum (Integer id){
+        this.id = id;
+    }
 
     private Integer id;
 }

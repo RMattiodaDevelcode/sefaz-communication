@@ -1,5 +1,6 @@
 package com.develcode.sefaz.demo.controller;
 
+import com.develcode.sefaz.demo.dataShape.dto.StatusDTO;
 import com.develcode.sefaz.demo.service.InutilizacaoService;
 import com.develcode.sefaz.demo.service.StatusService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,7 +17,7 @@ public class StatusController {
     private StatusService service;
 
     @GetMapping("/{codigoUF}")
-    public ResponseEntity<Boolean> getStatus(@PathVariable("codigoUF") Integer codigoUF){
+    public ResponseEntity<StatusDTO> getStatus(@PathVariable("codigoUF") Integer codigoUF){
         return ResponseEntity.ok(service.getStatus(codigoUF));
     }
 }
